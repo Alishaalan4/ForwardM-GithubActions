@@ -1,0 +1,13 @@
+name: Main Branch Merge Workflow
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  merged:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show merge message
+        run: echo "Changes merged to master"
